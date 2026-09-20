@@ -1,0 +1,45 @@
+{
+  "name": "beeimg-mcp",
+  "version": "1.0.0",
+  "description": "Local MCP (Model Context Protocol) server for the BeeIMG image hosting API. Run `npx beeimg-mcp` to expose upload_url, upload_file, delete_image, and premium-info tools to any MCP client over stdio.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "beeimg-mcp": "src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.js'",
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "beeimg",
+    "image",
+    "upload",
+    "hosting",
+    "claude",
+    "opencode",
+    "cursor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeeIMG/beeimg-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/BeeIMG/beeimg-mcp/issues"
+  },
+  "homepage": "https://beeimg.com/mcp-setup",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}
